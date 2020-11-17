@@ -24,7 +24,7 @@ closeButton.addEventListener('click', () => {
 });
 
 // Call the closeModal function when anywhere outside of the modal is clicked
-window.addEventListener('click', () => {
+window.addEventListener('click', event => {
     if (event.target === modal) {
         closeModal();
     }
